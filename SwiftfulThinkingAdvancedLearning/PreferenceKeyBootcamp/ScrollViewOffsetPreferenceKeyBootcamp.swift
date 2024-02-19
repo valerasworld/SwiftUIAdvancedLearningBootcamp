@@ -37,24 +37,33 @@ struct ScrollViewOffsetPreferenceKeyBootcamp: View {
     @State private var scrollViewOffset: CGFloat = 0
     
     var body: some View {
-        ScrollView {
-            VStack {
-                titleLayer
-                    .opacity(Double(scrollViewOffset) / 75.0)
-                    .onScrollViewOffsetChange { value in
-                        self.scrollViewOffset = value
-                    }
-                
-                contentLayer
+        
+        VStack(spacing: 0) {
+            Rectangle()
+                .opacity(0)
+                .frame(maxWidth: .infinity)
+                .frame(height: 34)
+            
+            ScrollView {
+                VStack {
+                    titleLayer
+                        .opacity(Double(scrollViewOffset) / 75.0)
+                        .onScrollViewOffsetChange { value in
+                            self.scrollViewOffset = value
+                        }
+                    
+                    contentLayer
+                }
+                .padding()
             }
-            .padding()
+            .overlay(
+                Text("\(scrollViewOffset)")
+            )
         }
         .overlay(
-            Text("\(scrollViewOffset)")
-        )
+            navBarLayer.opacity(scrollViewOffset < 40 ? 1.0 : 0.0)
+        , alignment: .top)
         
-        .overlay(navBarLayer.opacity(scrollViewOffset < 40 ? 1.0 : 0.0)
-                 , alignment: .top)
     }
 }
 
@@ -66,22 +75,23 @@ extension ScrollViewOffsetPreferenceKeyBootcamp {
    
     private var titleLayer: some View {
         VStack(spacing: 0) {
-            Rectangle()
-                .opacity(0)
-                .frame(maxWidth: .infinity)
-                .frame(height: 26)
+//            Rectangle()
+//                .opacity(0)
+//                .frame(maxWidth: .infinity)
+//                .frame(height: 26)
             Text(title)
                 .font(.largeTitle)
-                .fontWeight(.semibold)
-            .frame(maxWidth: .infinity, alignment: .leading)
+                .fontWeight(.bold)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .frame(height: 26)
         }
     }
     
     private var contentLayer: some View {
-        ForEach(0..<30) { _ in
-            RoundedRectangle(cornerRadius: 10)
-                .fill(Color.red.opacity(1))
-                .frame(width: 300, height: 200)
+        ForEach(0..<5) { _ in
+            RoundedRectangle(cornerRadius: 25)
+                .fill(Color.blue.opacity(1))
+                .frame(width: 300, height: 223)
         }
     }
     
@@ -93,7 +103,7 @@ extension ScrollViewOffsetPreferenceKeyBootcamp {
                 .frame(height: 40)
                 .background(Material.bar)
             Rectangle()
-                .background(Color.gray.opacity(0.1))
+                .fill(Color.black.opacity(0.3))
                 .frame(height: 1 / UIScreen.main.scale)
         }
     }

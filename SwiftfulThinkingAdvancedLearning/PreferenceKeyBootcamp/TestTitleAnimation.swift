@@ -12,17 +12,16 @@ struct TestTitleAnimation: View {
         NavigationStack {
             ScrollView {
                 VStack {
-                    ForEach(0..<10) { _ in
+                    ForEach(0..<5) { _ in
                             RoundedRectangle(cornerRadius: 25.0)
                             .fill(Color.red)
-                            .frame(width: 300, height: 200)
+                            .frame(width: 300, height: 223)
                             
                     }
                 }
                 .frame(maxWidth: .infinity)
                 .padding()
             }
-            
             .navigationTitle("Navigation Title")
         }
     }
