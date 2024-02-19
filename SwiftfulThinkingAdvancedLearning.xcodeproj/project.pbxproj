@@ -22,6 +22,7 @@
 		9FD36A682B82B27300DBB278 /* PreferenceKeyBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD36A672B82B27200DBB278 /* PreferenceKeyBootcamp.swift */; };
 		9FD36A6B2B82B90100DBB278 /* GeometryPreferenceKeyBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD36A6A2B82B90100DBB278 /* GeometryPreferenceKeyBootcamp.swift */; };
 		9FD36A6D2B82BC6600DBB278 /* ScrollViewOffsetPreferenceKeyBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD36A6C2B82BC6600DBB278 /* ScrollViewOffsetPreferenceKeyBootcamp.swift */; };
+		9FD36A6F2B82D6E100DBB278 /* TestTitleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD36A6E2B82D6E100DBB278 /* TestTitleAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		9FD36A672B82B27200DBB278 /* PreferenceKeyBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeyBootcamp.swift; sourceTree = "<group>"; };
 		9FD36A6A2B82B90100DBB278 /* GeometryPreferenceKeyBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceKeyBootcamp.swift; sourceTree = "<group>"; };
 		9FD36A6C2B82BC6600DBB278 /* ScrollViewOffsetPreferenceKeyBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewOffsetPreferenceKeyBootcamp.swift; sourceTree = "<group>"; };
+		9FD36A6E2B82D6E100DBB278 /* TestTitleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTitleAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				9FD36A672B82B27200DBB278 /* PreferenceKeyBootcamp.swift */,
 				9FD36A6A2B82B90100DBB278 /* GeometryPreferenceKeyBootcamp.swift */,
 				9FD36A6C2B82BC6600DBB278 /* ScrollViewOffsetPreferenceKeyBootcamp.swift */,
+				9FD36A6E2B82D6E100DBB278 /* TestTitleAnimation.swift */,
 			);
 			path = PreferenceKeyBootcamp;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				9F649E382B72DD22004E6DCF /* ButtonStyleBootcamp.swift in Sources */,
 				9F649E362B718B48004E6DCF /* ViewModifierBootcamp.swift in Sources */,
 				9F649E3A2B743323004E6DCF /* AnyTransitionBootcamp.swift in Sources */,
+				9FD36A6F2B82D6E100DBB278 /* TestTitleAnimation.swift in Sources */,
 				9F649E282B718ABE004E6DCF /* SwiftfulThinkingAdvancedLearningApp.swift in Sources */,
 				9FD36A442B7EB07A00DBB278 /* AnimatableDataBootcamp.swift in Sources */,
 				9FD36A662B815A7A00DBB278 /* ViewBuilderBootcamp.swift in Sources */,
