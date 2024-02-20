@@ -37,12 +37,11 @@ struct ScrollViewOffsetPreferenceKeyBootcamp: View {
     @State private var scrollViewOffset: CGFloat = 0
     
     var body: some View {
-        
         VStack(spacing: 0) {
             Rectangle()
                 .opacity(0)
                 .frame(maxWidth: .infinity)
-                .frame(height: 34)
+                .frame(height: 40) // 34
             
             ScrollView {
                 VStack {
@@ -61,8 +60,10 @@ struct ScrollViewOffsetPreferenceKeyBootcamp: View {
             )
         }
         .overlay(
-            navBarLayer.opacity(scrollViewOffset < 40 ? 1.0 : 0.0)
-        , alignment: .top)
+            navBarLayer/*.opacity(scrollViewOffset < 66.4 ? 1.0 : 0.0)*/
+            , alignment: .top)
+//        .animation(.easeIn, value: scrollViewOffset)
+        .background(Image("screen").resizable().ignoresSafeArea().scaledToFit())
         
     }
 }
@@ -74,23 +75,18 @@ struct ScrollViewOffsetPreferenceKeyBootcamp: View {
 extension ScrollViewOffsetPreferenceKeyBootcamp {
    
     private var titleLayer: some View {
-        VStack(spacing: 0) {
-//            Rectangle()
-//                .opacity(0)
-//                .frame(maxWidth: .infinity)
-//                .frame(height: 26)
-            Text(title)
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .frame(height: 26)
-        }
+        Text(title)
+            .font(.largeTitle)
+            .fontWeight(.bold)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            
+
     }
     
     private var contentLayer: some View {
         ForEach(0..<5) { _ in
             RoundedRectangle(cornerRadius: 25)
-                .fill(Color.blue.opacity(1))
+                .fill(Color.red)
                 .frame(width: 300, height: 223)
         }
     }
@@ -101,10 +97,13 @@ extension ScrollViewOffsetPreferenceKeyBootcamp {
                 .font(.headline)
                 .frame(maxWidth: .infinity)
                 .frame(height: 40)
+                .offset(y: -2)
+                .opacity(scrollViewOffset < 66.4 ? 1.0 : 0.0)
                 .background(Material.bar)
             Rectangle()
-                .fill(Color.black.opacity(0.3))
+                .fill(Color.black.opacity(scrollViewOffset < 56 ? 0.3 : 0))
                 .frame(height: 1 / UIScreen.main.scale)
         }
+        .animation(.easeIn(duration: 0.3), value: scrollViewOffset)
     }
 }
