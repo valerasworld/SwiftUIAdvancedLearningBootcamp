@@ -59,7 +59,7 @@ struct ScrollViewOffsetPreferenceKeyBootcamp2: View {
             navBarLayer/*.opacity(scrollViewOffset < 66.4 ? 1.0 : 0.0)*/
             , alignment: .top)
         //        .animation(.easeIn, value: scrollViewOffset)
-//        .background(Image("screen").resizable().ignoresSafeArea().scaledToFit())
+        .background(Image("screen").resizable().ignoresSafeArea().scaledToFit())
         
     }
 }
@@ -69,14 +69,15 @@ struct ScrollViewOffsetPreferenceKeyBootcamp2: View {
 }
 
 extension ScrollViewOffsetPreferenceKeyBootcamp2 {
-   
+    
     private var titleLayer: some View {
         Text(title)
             .font(.largeTitle)
             .fontWeight(.bold)
             .opacity(scrollViewOffset > 66.4 ? 1.0 : 0.0)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .animation(.linear(duration: 0.2), value: scrollViewOffset)
+            .animation(.linear(duration: 0.1), value: scrollViewOffset)
+            .background(Color.yellow)
 
     }
     
@@ -92,6 +93,7 @@ extension ScrollViewOffsetPreferenceKeyBootcamp2 {
     
     private var navBarLayer: some View {
         VStack(spacing: 0) {
+            
             Text(title)
                 .font(.headline)
                 .frame(maxWidth: .infinity)
@@ -99,11 +101,12 @@ extension ScrollViewOffsetPreferenceKeyBootcamp2 {
                 .offset(y: -2)
                 .opacity(scrollViewOffset <= 66.4 ? 1.0 : 0.0)
                 .background(scrollViewOffset >= 46.3 ? .white : .clear)
-                .background(Material.bar/*.opacity(scrollViewOffset < 46.3 ? 1 : 0)*/)
+                .background(Material.bar.opacity(scrollViewOffset < 46.3 ? 1 : 0))
+            
             Rectangle()
                 .fill(Color.black.opacity(scrollViewOffset < 46.3 ? 0.3 : 0))
                 .frame(height: 1 / UIScreen.main.scale)
         }
-        .animation(.linear, value: scrollViewOffset)
+        .animation(.linear(duration: 0.1), value: scrollViewOffset)
     }
 }
