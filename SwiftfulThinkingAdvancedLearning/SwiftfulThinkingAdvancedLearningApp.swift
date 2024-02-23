@@ -12,7 +12,7 @@ struct SwiftfulThinkingAdvancedLearningApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                ScrollViewOffsetPreferenceKeyBootcamp2()
+                TestTitleAnimation()
             }
         }
     }
