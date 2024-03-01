@@ -15,6 +15,7 @@
 		9F649E382B72DD22004E6DCF /* ButtonStyleBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F649E372B72DD22004E6DCF /* ButtonStyleBootcamp.swift */; };
 		9F649E3A2B743323004E6DCF /* AnyTransitionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F649E392B743323004E6DCF /* AnyTransitionBootcamp.swift */; };
 		9F924B982B856D64007E3864 /* ClippedTextTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F924B972B856D64007E3864 /* ClippedTextTest.swift */; };
+		9FB9137C2B92420C007BA9F6 /* ScrollViewAppleNavBarAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB9137B2B92420C007BA9F6 /* ScrollViewAppleNavBarAnimation.swift */; };
 		9FD36A402B7AD2D500DBB278 /* CustomShapesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD36A3F2B7AD2D500DBB278 /* CustomShapesBootcamp.swift */; };
 		9FD36A422B7AE6B500DBB278 /* CustomCurvesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD36A412B7AE6B500DBB278 /* CustomCurvesBootcamp.swift */; };
 		9FD36A442B7EB07A00DBB278 /* AnimatableDataBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD36A432B7EB07A00DBB278 /* AnimatableDataBootcamp.swift */; };
@@ -37,6 +38,7 @@
 		9F649E372B72DD22004E6DCF /* ButtonStyleBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleBootcamp.swift; sourceTree = "<group>"; };
 		9F649E392B743323004E6DCF /* AnyTransitionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionBootcamp.swift; sourceTree = "<group>"; };
 		9F924B972B856D64007E3864 /* ClippedTextTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClippedTextTest.swift; sourceTree = "<group>"; };
+		9FB9137B2B92420C007BA9F6 /* ScrollViewAppleNavBarAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewAppleNavBarAnimation.swift; sourceTree = "<group>"; };
 		9FD36A3F2B7AD2D500DBB278 /* CustomShapesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapesBootcamp.swift; sourceTree = "<group>"; };
 		9FD36A412B7AE6B500DBB278 /* CustomCurvesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurvesBootcamp.swift; sourceTree = "<group>"; };
 		9FD36A432B7EB07A00DBB278 /* AnimatableDataBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableDataBootcamp.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				9FD36A6A2B82B90100DBB278 /* GeometryPreferenceKeyBootcamp.swift */,
 				9FD36A6C2B82BC6600DBB278 /* ScrollViewOffsetPreferenceKeyBootcamp.swift */,
 				9FD36A702B8435DF00DBB278 /* ScrollViewOffsetPreferenceKey2.swift */,
+				9FB9137B2B92420C007BA9F6 /* ScrollViewAppleNavBarAnimation.swift */,
 				9FD36A6E2B82D6E100DBB278 /* TestTitleAnimation.swift */,
 				9F924B972B856D64007E3864 /* ClippedTextTest.swift */,
 			);
@@ -191,6 +194,7 @@
 				9F649E382B72DD22004E6DCF /* ButtonStyleBootcamp.swift in Sources */,
 				9F649E362B718B48004E6DCF /* ViewModifierBootcamp.swift in Sources */,
 				9F649E3A2B743323004E6DCF /* AnyTransitionBootcamp.swift in Sources */,
+				9FB9137C2B92420C007BA9F6 /* ScrollViewAppleNavBarAnimation.swift in Sources */,
 				9FD36A6F2B82D6E100DBB278 /* TestTitleAnimation.swift in Sources */,
 				9F649E282B718ABE004E6DCF /* SwiftfulThinkingAdvancedLearningApp.swift in Sources */,
 				9F924B982B856D64007E3864 /* ClippedTextTest.swift in Sources */,
